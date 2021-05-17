@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-DEFINED_APPS = ['apps.product']
+DEFINED_APPS = ['apps.product','frontend',]
 
 LIBRARY_APPS = ['rest_framework',]
 
