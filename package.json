@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development ./ecommerce/frontend/src/index.js --output-path ./ecommerce/frontend/static/frontend/",
+    "build": "webpack --mode production ./ecommerce/frontend/src/index.js --output-path ./ecommerce/frontend/static/frontend/"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,20 @@
   },
   "homepage": "https://github.com/prasen-jha/ecomm-django-react#readme",
   "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "webpack": "^5.37.0",
     "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0"
   }
 }
